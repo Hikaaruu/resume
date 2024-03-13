@@ -3,59 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Valery Polishchuk - Resume</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Link to Font Awesome for icons -->
 </head>
 <body>
-    <header>
-        <h1>Valery Polishchuk</h1>
-        <img src="../src/pic/profile.jpg" alt="Profile Picture" width="150" height="150">
-    </header>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="src/pic/profile.jpg" alt="Profile Picture" width="150" height="150">
+                <h1>Valery Polishchuk</h1>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> ip15polishukvalerij@gmail.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +1234567890</li>
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/valerypol/">Valery Polishchuk</a></li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>ASP.NET</li>
+                        <li>C#</li>
+                        <li>SQL Server</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Problem-solving</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
 
-    <section>
+        <!-- Main Area -->
+        <main class="main">
+            <header>
+                <h1>About Me</h1>
+                <p>I am a dedicated and passionate software developer with a strong foundation in ASP.NET, C#, and SQL Server. I thrive in collaborative environments, where I can contribute my problem-solving skills and attention to detail to create innovative solutions. Currently pursuing my education at the National Technical University of Ukraine 'Kyiv Polytechnic Institute', I am eager to further develop my skills and contribute to impactful projects in the field of software development.</p>
+            </header>
 
-        <p>I am a dedicated and passionate software developer with a strong foundation in ASP.NET, C#, and SQL Server. I thrive in collaborative environments, where I can contribute my problem-solving skills and attention to detail to create innovative solutions. Currently pursuing my education at the National Technical University of Ukraine 'Kyiv Polytechnic Institute', I am eager to further develop my skills and contribute to impactful projects in the field of software development.</p>
-    </section>
-    
-    <section>
-        <h2>Soft Skills</h2>
-        <ul>
-            <li>Communication</li>
-            <li>Teamwork</li>
-            <li>Problem-solving</li>
-            <li>Time Management</li>
-        </ul>
-    </section>
+            <section>
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Hikaaruu/AppRepo">BulkyBook</a> - Online book store
+                    </div>
+                    <div class="project">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Hikaaruu/NewsBlend">NewsBlend</a> - Web application for aggregation and automatic translation of news
+                    </div>
+                </div>
+            </section>
 
-    <section>
-        <h2>Hard Skills</h2>
-        <ul>
-            <li>ASP.NET</li>
-            <li>C#</li>
-            <li>SQL Server</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/Hikaaruu/AppRepo">BulkyBook</a> - Online book store</li>
-            <li><a href="https://project2.com">NewsBlend</a> - Web application for aggregation and automatic translation of news</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <p>National Technical University of Ukraine 'Kyiv Polytechnic Institute', 2021-now</p>
-    </section>
-
-    <footer>
-        <h2>Contact Information</h2>
-        <p>Email: ip15polishukvalerij@gmail.com</p>
-        <p>Phone: +1234567890</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/valerypol/">Valery Polishchuk</a></p>
-    </footer>
+            <section>
+                <h2>Education</h2>
+                <p>National Technical University of Ukraine 'Kyiv Polytechnic Institute', 2021-now</p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
